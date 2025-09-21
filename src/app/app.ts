@@ -1,16 +1,14 @@
 import { Component, signal, OnInit, ElementRef } from '@angular/core';
-import { MatSidenav, MatSidenavContainer, MatSidenavContent } from '@angular/material/sidenav';
-import { MatToolbar } from '@angular/material/toolbar';
+import { MatSidenav, MatSidenavContainer, MatSidenavContent, MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
 import { RouterOutlet, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   imports: [
-    MatSidenavContainer,
-    MatSidenav,
-    MatSidenavContent,
-    MatToolbar,
-    
+    MatSidenavModule,
+    MatToolbarModule,
+
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
